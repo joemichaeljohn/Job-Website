@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import './mixin.scss';
+
+:root {
+    --primary: #000000;
+    --secondary: #f1f1f1;
+    --orange: #f48244;
+    --white: #ffffff;
+    --crimson: "Crimson Pro", serif;
+    --roboto: "Roboto", sans-serif;
+}
+
+*,
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--roboto);
+    font-size: 1.2rem;
+    line-height: 150%;
+    background-color: var(--white);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--crimson);
+    font-weight: 700;
+
+}
+
+.btn-outline-secondary {
+    color: var(--primary);
+    background-color: var(--white) !important;
+    border-color: var(--primary) !important;
+    border-radius: 50px !important;
+}
+
+.header {
+    padding: 14px 0;
+}
+
+.brandlogo {
+    width: 30%;
+
+}
+
+.navigations {
+    width: 70%;
+
+    ul {
+        list-style: none;
+
+        a {
+            padding: 5px 20px;
+            text-decoration: none;
+            color: var(--primary);
+            font-size: 20px;
+            font-weight: 400;
+
+        }
+    }
+}
+
+.banner-section {
+    background-color: var(--secondary);
+    width: 100%;
+
+
+}
+
+.content {
+    h1 {
+        font-size: 5rem;
+    }
+
+    p {
+        padding-top: 8px;
+        font-size: 20px;
+    }
+}
+
+.text1 {
+    -webkit-text-stroke: 3px black;
+    -webkit-text-fill-color: #f1f1f1;
+    font-size: 5rem;
+    text-align: center;
+}
+
+.btn-primary {
+
+    color: var(--secondary);
+    background-color: var(--orange) !important;
+    border-color: #f48244 !important;
+    border-radius: 60px !important;
+
+}
+
+.rightimage {
+    img {
+        width: 50%;
+        border-top-left-radius: 50px;
+        border-bottom-right-radius: 50px;
+    }
+
+}
+
+.wordings {
+    h1 {
+        padding-top: 160px;
+        padding-bottom: 20px;
+        font-size: 4rem;
+
+    }
+
+    p {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 25px;
+    }
+}
+
+
+.globelogo {
+    padding-top: 100px;
+    padding-left: 60px;
+}
+
+.list {
+    background-color: var(--secondary);
+    border-radius: 20px;
+
+    p {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 18px;
+    }
+}
+
+.why-choose-us {
+    h1 {
+        font-size: 3.5rem;
+        padding-top: 15px;
+        padding-bottom: 30px;
+
+    }
+}
+
+.testimonial {
+    h1 {
+        font-size: 4.5rem;
+        padding-top: 25px;
+        padding-bottom: 15px;
+    }
+}
+
+
+.mike {
+    background-color: var(--secondary);
+    border-radius: 15px;
+
+    .desc {
+        min-height: 200px;
+
+    }
+}
+
+.working-with {
+    h1 {
+        font-size: 4.5rem;
+        padding-top: 25px;
+        padding-bottom: 15px;
+
+    }
+
+    .word-list {
+        h4 {
+            font-size: 30px;
+
+        }
+
+        p {
+            font-size: 20px;
+        }
+    }
+
+
+}
+
+.refer-friend {
+    img {
+        width: 50%;
+        border-radius: 30px;
+
+
+
+    }
+
+    h1 {
+        font-size: 4.5rem;
+        padding-top: 25px;
+        padding-bottom: 30px;
+
+    }
+
+    p {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 25px;
+    }
+
+}
+
+.footer {
+    background-color: #000000;
+    
+        h5{
+            color:white;
+        }
+    }
