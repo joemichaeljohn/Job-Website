@@ -32,33 +32,41 @@ h6 {
   font-weight: 700;
 }
 
-.btn-outline-secondary {
-  color: var(--primary);
-  background-color: var(--white) !important;
-  border-color: var(--primary) !important;
-  border-radius: 50px !important;
-}
-
 .header {
   padding: 14px 0;
 }
-
-.brandlogo {
+.header .brandlogo {
   width: 30%;
 }
-
-.navigations {
+@media (min-width: 567px) {
+  .header .brandlogo img {
+    width: 50%;
+  }
+}
+.header .navigations {
   width: 70%;
 }
-.navigations ul {
+.header .navigations ul {
   list-style: none;
 }
-.navigations ul a {
+.header .navigations ul a {
   padding: 5px 20px;
   text-decoration: none;
   color: var(--primary);
   font-size: 20px;
   font-weight: 400;
+}
+@media (max-width: 900px) {
+  .header .navigations ul a {
+    display: none;
+  }
+}
+
+.btn-outline-secondary {
+  color: var(--primary);
+  background-color: var(--white) !important;
+  border-color: var(--primary) !important;
+  border-radius: 50px !important;
 }
 
 .banner-section {
@@ -69,9 +77,19 @@ h6 {
 .content h1 {
   font-size: 5rem;
 }
+@media (max-width: 900px) {
+  .content h1 {
+    font-size: 2rem;
+  }
+}
 .content p {
   padding-top: 8px;
   font-size: 20px;
+}
+@media (max-width: 900px) {
+  .content p {
+    font-size: 15px;
+  }
 }
 
 .text1 {
@@ -79,6 +97,14 @@ h6 {
   -webkit-text-fill-color: #f1f1f1;
   font-size: 5rem;
   text-align: center;
+}
+@media (max-width: 900px) {
+  .text1 {
+    -webkit-text-stroke: 1px black;
+    -webkit-text-fill-color: #f1f1f1;
+    font-size: 2rem;
+    text-align: center;
+  }
 }
 
 .btn-primary {
@@ -99,23 +125,32 @@ h6 {
   padding-bottom: 20px;
   font-size: 4rem;
 }
+@media (max-width: 900px) {
+  .wordings h1 {
+    font-size: 2.5rem;
+    padding-top: 100px;
+  }
+}
 .wordings p {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 25px;
+}
+@media (max-width: 900px) {
+  .wordings p {
+    font-size: 17px;
+  }
 }
 
 .globelogo {
   padding-top: 100px;
   padding-left: 60px;
 }
-
-.list {
-  background-color: var(--secondary);
-  border-radius: 20px;
-}
-.list p {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 18px;
+@media (max-width: 900px) {
+  .globelogo {
+    width: 100%;
+    padding-top: 75px;
+    padding-left: 60px;
+  }
 }
 
 .why-choose-us h1 {
@@ -123,45 +158,105 @@ h6 {
   padding-top: 15px;
   padding-bottom: 30px;
 }
+@media (max-width: 900px) {
+  .why-choose-us h1 {
+    font-size: 2rem;
+  }
+}
+
+.list {
+  background-color: var(--secondary);
+  border-radius: 20px;
+}
+@media (max-width: 900px) {
+  .list {
+    border-radius: 15px;
+    padding: 3rem;
+  }
+}
+.list p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+}
+@media (max-width: 900px) {
+  .list p {
+    font-size: 15px;
+  }
+}
 
 .testimonial h1 {
   font-size: 4.5rem;
   padding-top: 25px;
   padding-bottom: 15px;
 }
-
-.mike {
+@media (max-width: 900px) {
+  .testimonial h1 {
+    font-size: 2.5rem;
+  }
+}
+.testimonial .mike {
   background-color: var(--secondary);
   border-radius: 15px;
 }
-.mike .desc {
+@media (max-width: 900px) {
+  .testimonial .mike {
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 1.5rem !important;
+  }
+}
+.testimonial .desc {
   min-height: 200px;
 }
 
 .working-with h1 {
   font-size: 4.5rem;
-  padding-top: 25px;
+  padding-top: 30px;
   padding-bottom: 15px;
+}
+@media (max-width: 900px) {
+  .working-with h1 {
+    font-size: 2.5rem;
+  }
 }
 .working-with .word-list h4 {
   font-size: 30px;
 }
+@media (max-width: 900px) {
+  .working-with .word-list h4 {
+    font-size: 25px;
+  }
+}
 .working-with .word-list p {
   font-size: 20px;
 }
-
-.refer-friend img {
-  width: 50%;
-  border-radius: 30px;
+@media (max-width: 900px) {
+  .working-with .word-list p {
+    font-size: 16px;
+  }
 }
+
 .refer-friend h1 {
   font-size: 4.5rem;
   padding-top: 25px;
   padding-bottom: 30px;
 }
+@media (max-width: 900px) {
+  .refer-friend h1 {
+    font-size: 2.5rem;
+  }
+}
 .refer-friend p {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 25px;
+}
+@media (max-width: 900px) {
+  .refer-friend p {
+    font-size: 16px;
+  }
+}
+.refer-friend .manwith {
+  width: 50%;
+  border-radius: 30px;
 }
 
 .footer {
@@ -169,4 +264,9 @@ h6 {
 }
 .footer h5 {
   color: white;
+}
+@media (max-width: 900px) {
+  .footer h5 {
+    font-size: 16px;
+  }
 }/*# sourceMappingURL=style.css.map */
