@@ -42,12 +42,15 @@ h6 {
     .brandlogo {
         width: 30%;
 
-        img {
-            @media (min-width:567px) {
-                width: 50%;
-
-            }
+        @media (max-width:600px) {
+            text-align: center;
+            width: 50%;
         }
+
+        @media(max-width:900px) {
+            text-align: center;
+        }
+
     }
 
     .navigations {
@@ -64,9 +67,14 @@ h6 {
                 font-size: 20px;
                 font-weight: 400;
 
+                @media(max-width:600px) {
+                    display: none;
+                }
+
                 @media(max-width:900px) {
                     display: none;
                 }
+
 
 
 
@@ -84,6 +92,12 @@ h6 {
     background-color: var(--white) !important;
     border-color: var(--primary) !important;
     border-radius: 50px !important;
+
+    @media(max-width:600px) {
+        text-align: center;
+    }
+
+
 }
 
 
@@ -93,6 +107,11 @@ h6 {
 }
 
 .content {
+
+    @media(max-width:600px) {
+        text-align: center;
+    }
+
     h1 {
         font-size: 5rem;
 
@@ -140,43 +159,67 @@ h6 {
         width: 50%;
         border-top-left-radius: 50px;
         border-bottom-right-radius: 50px;
+
+        @media(max-width:600px) {
+            text-align: center;
+            padding-top: 10px;
+        }
     }
 
 }
 
 .wordings {
     h1 {
-        padding-top: 160px;
+        padding-top: 30px;
         padding-bottom: 20px;
         font-size: 4rem;
 
+        @media(max-width:600px) {
+
+            text-align: center;
+        }
+
         @media(max-width:900px) {
             font-size: 2.5rem;
-            padding-top: 100px;
 
         }
+
+
     }
 
     p {
         font-family: Arial, Helvetica, sans-serif;
         font-size: 25px;
 
+        @media(max-width:600px) {
+            text-align: center;
+        }
+
         @media(max-width:900px) {
             font-size: 17px;
         }
+
+
+
     }
 }
 
 
 .globelogo {
-    padding-top: 100px;
-    padding-left: 60px;
+
+    padding-left: 40px;
+
+    @media(max-width:600px) {
+        width: 50%;
+    }
 
     @media(max-width:900px) {
-        width: 100%;
-        padding-top: 75px;
-        padding-left: 60px;
+        width: 80%;
+        padding-left: 50px;
     }
+
+
+
 }
 
 
@@ -186,11 +229,15 @@ h6 {
         padding-top: 15px;
         padding-bottom: 30px;
 
-        @media(max-width:900px) {
-            font-size: 2rem;
-
+        @media(max-width:400px) {
+            text-align: center;
+            padding-bottom: 15px;
         }
 
+        @media(max-width:600px) {
+            text-align: center;
+            font-size: 2.5rem;
+        }
 
 
     }
@@ -232,6 +279,12 @@ h6 {
 
         }
 
+        @media(max-width:400px) {
+            text-align: center;
+            font-size: 2rem;
+
+        }
+
     }
 
 
@@ -240,11 +293,11 @@ h6 {
         background-color: var(--secondary);
         border-radius: 15px;
 
-        @media(max-width:900px) {
-            --bs-gutter-x: 1.5rem;
-            --bs-gutter-y: 1.5rem !important;
-
+        @media(max-width:400px) {
+            text-align: center;
         }
+
+
     }
 
 
@@ -263,11 +316,16 @@ h6 {
     h1 {
         font-size: 4.5rem;
         padding-top: 30px;
-        padding-bottom: 15px;
+        padding-bottom: 30px;
+
 
         @media(max-width:900px) {
             font-size: 2.5rem;
 
+        }
+
+        @media(max-width:600px) {
+            text-align: center;
         }
 
 
@@ -275,12 +333,22 @@ h6 {
     }
 
     .word-list {
+        @media(max-width:600px) {
+            padding-top: 10px;
+        }
+
+
+
         h4 {
             font-size: 30px;
 
             @media(max-width:900px) {
 
                 font-size: 25px;
+            }
+
+            @media(max-width:600px) {
+                text-align: center;
             }
 
         }
@@ -292,7 +360,13 @@ h6 {
                 font-size: 16px;
 
             }
+
+            @media(max-width:600px) {
+                text-align: center;
+            }
         }
+
+
     }
 
 
@@ -303,6 +377,13 @@ h6 {
         font-size: 4.5rem;
         padding-top: 25px;
         padding-bottom: 30px;
+
+        @media(max-width:600px) {
+            text-align: center;
+            font-size: 2rem;
+            padding-top: 5px;
+            padding-bottom: 5px;
+        }
 
         @media(max-width:900px) {
             font-size: 2.5rem;
@@ -315,6 +396,10 @@ h6 {
         font-family: Arial, Helvetica, sans-serif;
         font-size: 25px;
 
+        @media(max-width:600px) {
+            text-align: center;
+        }
+
         @media(max-width:900px) {
             font-size: 16px;
         }
@@ -322,9 +407,20 @@ h6 {
 
     }
 
-    .manwith {
-        width: 50%;
-        border-radius: 30px;
+    .right-image {
+
+        @media(max-width:600px) {
+            text-align: center;
+        }
+
+
+        .manwith {
+            width: 50%;
+            border-radius: 30px;
+        }
+
+
+
     }
 
 

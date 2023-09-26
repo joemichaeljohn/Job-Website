@@ -38,9 +38,15 @@ h6 {
 .header .brandlogo {
   width: 30%;
 }
-@media (min-width: 567px) {
-  .header .brandlogo img {
+@media (max-width: 600px) {
+  .header .brandlogo {
+    text-align: center;
     width: 50%;
+  }
+}
+@media (max-width: 900px) {
+  .header .brandlogo {
+    text-align: center;
   }
 }
 .header .navigations {
@@ -56,6 +62,11 @@ h6 {
   font-size: 20px;
   font-weight: 400;
 }
+@media (max-width: 600px) {
+  .header .navigations ul a {
+    display: none;
+  }
+}
 @media (max-width: 900px) {
   .header .navigations ul a {
     display: none;
@@ -68,12 +79,22 @@ h6 {
   border-color: var(--primary) !important;
   border-radius: 50px !important;
 }
+@media (max-width: 600px) {
+  .btn-outline-secondary {
+    text-align: center;
+  }
+}
 
 .banner-section {
   background-color: var(--secondary);
   width: 100%;
 }
 
+@media (max-width: 600px) {
+  .content {
+    text-align: center;
+  }
+}
 .content h1 {
   font-size: 5rem;
 }
@@ -119,21 +140,36 @@ h6 {
   border-top-left-radius: 50px;
   border-bottom-right-radius: 50px;
 }
+@media (max-width: 600px) {
+  .rightimage img {
+    text-align: center;
+    padding-top: 10px;
+  }
+}
 
 .wordings h1 {
-  padding-top: 160px;
+  padding-top: 30px;
   padding-bottom: 20px;
   font-size: 4rem;
+}
+@media (max-width: 600px) {
+  .wordings h1 {
+    text-align: center;
+  }
 }
 @media (max-width: 900px) {
   .wordings h1 {
     font-size: 2.5rem;
-    padding-top: 100px;
   }
 }
 .wordings p {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 25px;
+}
+@media (max-width: 600px) {
+  .wordings p {
+    text-align: center;
+  }
 }
 @media (max-width: 900px) {
   .wordings p {
@@ -142,14 +178,17 @@ h6 {
 }
 
 .globelogo {
-  padding-top: 100px;
-  padding-left: 60px;
+  padding-left: 40px;
+}
+@media (max-width: 600px) {
+  .globelogo {
+    width: 50%;
+  }
 }
 @media (max-width: 900px) {
   .globelogo {
-    width: 100%;
-    padding-top: 75px;
-    padding-left: 60px;
+    width: 80%;
+    padding-left: 50px;
   }
 }
 
@@ -158,9 +197,16 @@ h6 {
   padding-top: 15px;
   padding-bottom: 30px;
 }
-@media (max-width: 900px) {
+@media (max-width: 400px) {
   .why-choose-us h1 {
-    font-size: 2rem;
+    text-align: center;
+    padding-bottom: 15px;
+  }
+}
+@media (max-width: 600px) {
+  .why-choose-us h1 {
+    text-align: center;
+    font-size: 2.5rem;
   }
 }
 
@@ -194,14 +240,19 @@ h6 {
     font-size: 2.5rem;
   }
 }
+@media (max-width: 400px) {
+  .testimonial h1 {
+    text-align: center;
+    font-size: 2rem;
+  }
+}
 .testimonial .mike {
   background-color: var(--secondary);
   border-radius: 15px;
 }
-@media (max-width: 900px) {
+@media (max-width: 400px) {
   .testimonial .mike {
-    --bs-gutter-x: 1.5rem;
-    --bs-gutter-y: 1.5rem !important;
+    text-align: center;
   }
 }
 .testimonial .desc {
@@ -211,11 +262,21 @@ h6 {
 .working-with h1 {
   font-size: 4.5rem;
   padding-top: 30px;
-  padding-bottom: 15px;
+  padding-bottom: 30px;
 }
 @media (max-width: 900px) {
   .working-with h1 {
     font-size: 2.5rem;
+  }
+}
+@media (max-width: 600px) {
+  .working-with h1 {
+    text-align: center;
+  }
+}
+@media (max-width: 600px) {
+  .working-with .word-list {
+    padding-top: 10px;
   }
 }
 .working-with .word-list h4 {
@@ -226,6 +287,11 @@ h6 {
     font-size: 25px;
   }
 }
+@media (max-width: 600px) {
+  .working-with .word-list h4 {
+    text-align: center;
+  }
+}
 .working-with .word-list p {
   font-size: 20px;
 }
@@ -234,11 +300,24 @@ h6 {
     font-size: 16px;
   }
 }
+@media (max-width: 600px) {
+  .working-with .word-list p {
+    text-align: center;
+  }
+}
 
 .refer-friend h1 {
   font-size: 4.5rem;
   padding-top: 25px;
   padding-bottom: 30px;
+}
+@media (max-width: 600px) {
+  .refer-friend h1 {
+    text-align: center;
+    font-size: 2rem;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
 }
 @media (max-width: 900px) {
   .refer-friend h1 {
@@ -249,12 +328,22 @@ h6 {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 25px;
 }
+@media (max-width: 600px) {
+  .refer-friend p {
+    text-align: center;
+  }
+}
 @media (max-width: 900px) {
   .refer-friend p {
     font-size: 16px;
   }
 }
-.refer-friend .manwith {
+@media (max-width: 600px) {
+  .refer-friend .right-image {
+    text-align: center;
+  }
+}
+.refer-friend .right-image .manwith {
   width: 50%;
   border-radius: 30px;
 }
